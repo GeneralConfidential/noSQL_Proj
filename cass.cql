@@ -4,14 +4,26 @@ USE Teyvat;
 CREATE TABLE char (
     id number PRIMARY KEY,
     name text,
-    weapon text,
     element text,
     dob date,
     nationality text,
     );
+    
+Insert into char(id, name, element, dob, nationality) VALUES (01, 'Jean', 'Anemo', '1997-03-14', 'Monstead');
+Insert into char(id, name, element, dob, nationality) VALUES (02, 'Venti', 'Anemo', '0586-06-13', 'Monstead');
+Insert into char(id, name, element, dob, nationality) VALUES (03, 'Xiao', 'Anemo', '1995-04-17', 'Liyue');
+Insert into char(id, name, element, dob, nationality) VALUES (04, 'Kaedehara Kazuha', 'Anemo', '1998-10-29', 'Inazuma');
+Insert into char(id, name, element, dob, nationality) VALUES (05, 'Eula Lawrence', 'Cryo', '1990-10-25', 'Monstead');
+Insert into char(id, name, element, dob, nationality) VALUES (06, 'Kamisato Ayaka', 'Cryo', '2002-09-28', 'Inazuma');
+Insert into char(id, name, element, dob, nationality) VALUES (07, 'Ganyu', 'Cryo', '9999-12-02', 'Inazuma');
+Insert into char(id, name, element, dob, nationality) VALUES (08, 'Shenhe', 'Cryo', '1982-04-04', 'Liyue');
+Insert into char(id, name, element, dob, nationality) VALUES (09, 'Qiqi', 'Cryo', '9999-04-04', 'Liyue');
+Insert into char(id, name, element, dob, nationality) VALUES (10, 'Kamisato Ayato', 'Hydro', '1998-03-26', 'Inazuma');
+Insert into char(id, name, element, dob, nationality) VALUES (11, 'Sangonomiya Kokomi', 'Hydro', '1992-02-22', 'Inazuma');
+Insert into char(id, name, element, dob, nationality) VALUES (12, 'Mona Megistus', 'Hydro', '2000-08-21', 'Monstead');
+Insert into char(id, name, element, dob, nationality) VALUES (12, 'Tartaglia', 'Hydro', '1998-07-20', 'Snezhnaya');
+Insert into char(id, name, element, dob, nationality) VALUES (13, 'Yelan', 'Hydro', '1985-04-20', 'Liyue');
 
-Insert into char(id, name, weapon, element, dob, nationality) 
-  VALUES (000, '', '', '', '2011-02-03', '');
 
 
 CREATE TABLE weapon (
