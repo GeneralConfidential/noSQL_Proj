@@ -7,6 +7,7 @@ CREATE TABLE char (
     element text,
     dob date,
     nationality text,
+    );
      
 Insert into char(id, name, element, dob, nationality) VALUES (01, 'Jean', 'Anemo', '1997-03-14', 'Mondstadt');
 Insert into char(id, name, element, dob, nationality) VALUES (02, 'Venti', 'Anemo', '0586-06-13', 'Mondstadt');
