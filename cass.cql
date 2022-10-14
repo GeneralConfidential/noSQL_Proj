@@ -1,14 +1,13 @@
-CREATE KEYSPACE Teyvat; 
+CREATE KEYSPACE Teyvat WITH replication = {'class': 'SimpleStrategy', 'replication_factor' : 1};
 USE Teyvat;
 
 CREATE TABLE char (
-    id number PRIMARY KEY,
+    id int PRIMARY KEY,
     name text,
     element text,
     dob date,
     nationality text,
-    );
-    
+     
 Insert into char(id, name, element, dob, nationality) VALUES (01, 'Jean', 'Anemo', '1997-03-14', 'Monstead');
 Insert into char(id, name, element, dob, nationality) VALUES (02, 'Venti', 'Anemo', '0586-06-13', 'Monstead');
 Insert into char(id, name, element, dob, nationality) VALUES (03, 'Xiao', 'Anemo', '1995-04-17', 'Liyue');
@@ -27,35 +26,35 @@ Insert into char(id, name, element, dob, nationality) VALUES (13, 'Yelan', 'Hydr
 
 
 CREATE TABLE weapon (
-    id number PRIMARY KEY,
+    id int PRIMARY KEY,
     name text,
     type text,
     substat text,
-    subValue number,
-    baseATK number,
-    cid number,
+    subValue int,
+    baseATK int,
+    cid int,
     );
 
-Insert into weapon(id, name, type, substat, subValue, baseATK, cid) VALUES (1, 'Staff of Homa', 'Polearm', 'CRIT DMG', 66.2,608, 0);
+Insert into weapon(id, name, type, substat, subValue, baseATK, cid) VALUES (1, 'Staff of Homa', 'Polearm', 'CRIT DMG', 66,608, 0);
 Insert into weapon(id, name, type, substat, subValue, baseATK, cid) VALUES (2, 'Mistsplitter Reforged', 'Sword', 'CRIT DMG', ,674, 0);
-Insert into weapon(id, name, type, substat, subValue, baseATK, cid) VALUES (3, 'Song of Broken Pines', 'Claymore', 'Physical DMG Bonus', 20.7,741, 0);
+Insert into weapon(id, name, type, substat, subValue, baseATK, cid) VALUES (3, 'Song of Broken Pines', 'Claymore', 'Physical DMG Bonus', 20,741, 0);
 Insert into weapon(id, name, type, substat, subValue, baseATK, cid) VALUES (4, 'Freedom Sworn', 'Sword', 'EM', 198, 608, 0);
-Insert into weapon(id, name, type, substat, subValue, baseATK, cid) VALUES (5, 'Aqua Simulacra', 'Bow', 'CRIT DMG', 88.2, 542, 0);
-Insert into weapon(id, name, type, substat, subValue, baseATK, cid) VALUES (6, 'Amos Bow', 'Bow', 'ATK%', 49.6, 608, 0);
+Insert into weapon(id, name, type, substat, subValue, baseATK, cid) VALUES (5, 'Aqua Simulacra', 'Bow', 'CRIT DMG', 88, 542, 0);
+Insert into weapon(id, name, type, substat, subValue, baseATK, cid) VALUES (6, 'Amos Bow', 'Bow', 'ATK%', 49, 608, 0);
 Insert into weapon(id, name, type, substat, subValue, baseATK, cid) VALUES (7, 'Thundering Pulse', 'Bow', 'CRIT DMG', 66.2, 608, 0);
-Insert into weapon(id, name, type, substat, subValue, baseATK, cid) VALUES (8, 'Elegy for the End', 'Bow', 'Energy Recharge', 55.1, 608, 0);
+Insert into weapon(id, name, type, substat, subValue, baseATK, cid) VALUES (8, 'Elegy for the End', 'Bow', 'Energy Recharge', 55, 608, 0);
 
 CREATE TABLE boss (
-    id number PRIMARY KEY,
+    id int PRIMARY KEY,
     name text,
     element text,
     location text,
     nation text,
     );
     
-Insert into boss(id, name, element, location, nation) VALUES (001, 'Dvalin','Anemo','Old Monstadt','Monstadt');
-Insert into boss(id, name, element, location, nation) VALUES (002, 'Andreas','Cryo','Wolvendom','Monstadt');
-Insert into boss(id, name, element, location, nation) VALUES (003, 'Childe','Electro','Golden House','Liyue');
-Insert into boss(id, name, element, location, nation) VALUES (004, 'Azhdaha','Electro','Nantianmen','Liyue');
-Insert into boss(id, name, element, location, nation) VALUES (005, 'La Signora','Pyro','Tenshukaku','Inazuma');
-Insert into boss(id, name, element, location, nation) VALUES (006, 'Magatsu Mitake Narukami no Mikoto','Electro','Mt Yougou','Inazuma');
+Insert into boss(id, name, element, location, nation) VALUES (1, 'Dvalin','Anemo','Old Monstadt','Monstadt');
+Insert into boss(id, name, element, location, nation) VALUES (2, 'Andreas','Cryo','Wolvendom','Monstadt');
+Insert into boss(id, name, element, location, nation) VALUES (3, 'Childe','Electro','Golden House','Liyue');
+Insert into boss(id, name, element, location, nation) VALUES (4, 'Azhdaha','Electro','Nantianmen','Liyue');
+Insert into boss(id, name, element, location, nation) VALUES (5, 'La Signora','Pyro','Tenshukaku','Inazuma');
+Insert into boss(id, name, element, location, nation) VALUES (6, 'Magatsu Mitake Narukami no Mikoto','Electro','Mt Yougou','Inazuma');
