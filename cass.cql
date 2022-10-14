@@ -52,7 +52,10 @@ CREATE TABLE boss (
     location text,
     nation text,
     );
-
-Insert into weapon(id, name, element, location, nation) 
-  VALUES (000, '', '', '', '');
-
+    
+Insert into boss(id, name, element, location, nation) VALUES (001, 'Dvalin','Anemo','Old Monstadt','Monstadt');
+Insert into boss(id, name, element, location, nation) VALUES (002, 'Andreas','Cryo','Wolvendom','Monstadt');
+Insert into boss(id, name, element, location, nation) VALUES (003, 'Childe','Electro','Golden House','Liyue');
+Insert into boss(id, name, element, location, nation) VALUES (004, 'Azhdaha','Electro','Nantianmen','Liyue');
+Insert into boss(id, name, element, location, nation) VALUES (005, 'La Signora','Pyro','Tenshukaku','Inazuma');
+Insert into boss(id, name, element, location, nation) VALUES (006, 'Magatsu Mitake Narukami no Mikoto','Electro','Mt Yougou','Inazuma');
